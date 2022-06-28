@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        other information bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Other Information"
+                android:textColor="@color/black"
+                android:textSize="50dp" />
+        </LinearLayout>
+
+<!--head skill sets bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/head2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Skill Sets"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+
+<!--       skil1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/skil1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Skil1 :"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/skil1_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+        </LinearLayout>
+
+<!--        skil2-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/skil2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skil2 :"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/skil2_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+<!--        skil3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/skil3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skil4 :"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/skil3_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+<!--skill4-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/skil4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skil3 :"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/skil4_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+<!--        butten bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:paddingTop="50dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/next4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="NEXT" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

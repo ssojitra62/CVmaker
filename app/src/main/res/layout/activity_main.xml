@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--persnal Information bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Persnal Information"
+                android:gravity="top|center"
+                android:textSize="30dp"
+                android:textColor="#001DAE"/>
+        </LinearLayout>
+
+
+
+        <!--name bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="80dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+        <!--surname bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Abour you:"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="54dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+        <!--birth date-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Date of birth:"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="23dp"
+                android:inputType="date"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+
+
+
+        <!--Mobile no.-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_mno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Mobile no.:"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/mno"
+                android:inputType="number"
+                android:maxLength="10"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+        <!--email bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="E mail:"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="80dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+        <!--hobbyes bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_hoddy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Hobby:"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/hobby"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="78dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <!--spelization bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/spelization_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spelization :"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/spelization"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+        <!--Gender bar        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Gender:"
+                android:textSize="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="72dp"
+                android:checkedButton="@id/male">
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Male"
+                    android:layout_marginRight="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="female"
+                    android:layout_marginRight="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/othre"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="other" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <!--        next butten bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="98dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="#FF0000">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="hii"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="NEXT"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
